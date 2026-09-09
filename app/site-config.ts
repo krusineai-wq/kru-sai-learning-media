@@ -1,0 +1,2 @@
+export const siteConfig={name:'KruSine Smart Games',facebookPage:'',facebookGroup:'',contactEmail:'',pricesConfirmed:false};
+export const plans=[{id:'premium_1_month',months:1,title:'1 เดือน',price:50,average:'เฉลี่ย 50 บาทต่อเดือน'},{id:'premium_6_months',months:6,title:'6 เดือน',price:150,average:'เฉลี่ย 25 บาทต่อเดือน'},{id:'premium_12_months',months:12,title:'1 ปี',price:200,average:'เฉลี่ยไม่ถึง 17 บาทต่อเดือน'}];

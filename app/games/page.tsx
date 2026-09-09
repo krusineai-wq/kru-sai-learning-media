@@ -1,2 +1,2 @@
-import SmartGames from '../smart-games';
-export default function Page(){return <SmartGames view="games"/>;}
+import ARCatalog from '../ar-catalog';
+export default function Page(){return <ARCatalog/>}
