@@ -1,5 +1,8 @@
+import {createElement} from 'react';
+import {Sigma,Globe2,Atom,Feather,SwatchBook,Orbit} from 'lucide-react';
 import {games} from './game-data';
 export type PlayMode='camera'|'touch'|'audio';
-export const arGames=games.map((g,i)=>({...g,emoji:['🔢','🦊','🧪','🐣','🎨','🔎'][i],grade:['ป.2','ป.1','ป.4','ป.3','ป.1','ป.3'][i],year:2026,mode:('touch' as PlayMode),method:'แตะสัมผัส',prompt:`สร้างเกมการศึกษาเรื่อง ${g.subject} ชื่อ ${g.title} สำหรับ ${g.level} ใช้ภาษาไทย รองรับมือถือและคอมพิวเตอร์ มีคำถาม 5 ข้อ ตัวเลือก 4 ข้อ เฉลยพร้อมคำอธิบาย ปุ่มเล่นใหม่ และคะแนน ไม่เก็บภาพกล้องหรือข้อมูลส่วนตัวของนักเรียน`}));
+export const arGames=games.map((g,i)=>({...g,emoji:createElement([Sigma,Globe2,Atom,Feather,SwatchBook,Orbit][i],{className:'ks-subject-icon','aria-hidden':true}),grade:['ป.2','ป.1','ป.4','ป.3','ป.1','ป.3'][i],year:2026,mode:('touch' as PlayMode),method:'แตะสัมผัส',prompt:`สร้างเกมการศึกษาเรื่อง ${g.subject} ชื่อ ${g.title} สำหรับ ${g.level} ใช้ภาษาไทย รองรับมือถือและคอมพิวเตอร์ มีคำถาม 5 ข้อ ตัวเลือก 4 ข้อ เฉลยพร้อมคำอธิบาย ปุ่มเล่นใหม่ และคะแนน ไม่เก็บภาพกล้องหรือข้อมูลส่วนตัวของนักเรียน`}));
 export const gradeOptions=['อนุบาล 1','อนุบาล 2','อนุบาล 3',...Array.from({length:6},(_,i)=>`ป.${i+1}`),...Array.from({length:6},(_,i)=>`ม.${i+1}`)];
 export const subjectOptions=['ภาษาไทย','คณิตศาสตร์','วิทยาศาสตร์','ฟิสิกส์','เคมี','ชีววิทยา','วิทยาการคำนวณ','การออกแบบและเทคโนโลยี','สังคมศึกษา','ประวัติศาสตร์','หน้าที่พลเมือง','เศรษฐศาสตร์','ภูมิศาสตร์','สุขศึกษา','พลศึกษา','ศิลปะ','ดนตรี','นาฏศิลป์','การงานอาชีพ','ภาษาอังกฤษ','ภาษาจีน','ภาษาญี่ปุ่น','คิดวิเคราะห์'];
+

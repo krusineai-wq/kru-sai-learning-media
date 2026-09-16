@@ -15,6 +15,13 @@
       "when": 1788924386904,
       "tag": "0001_striped_virginia_dare",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1789541163689,
+      "tag": "0002_sad_mathemanic",
+      "breakpoints": true
     }
   ]
 }
